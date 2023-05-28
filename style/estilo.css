@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+body{
+     overflow: hidden;
+}
+header{
+    background-color: #000;
+    height: 100px;
+    overflow: hidden;
+
+}
+main{
+    overflow:auto;
+    height: 100%;
+    padding-bottom:80px ;
+}
+/* menu mobile*/
+menu{
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    min-height: 78%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background-color: #1e1e1e;
+}
+menu div.fecha{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+menu > div > span.material-symbols-outlined{
+    color: #fff;
+    font-size: 2em;
+    font-weight:bold;
+}
+menu ul.list-menu{
+    list-style-position: inside;
+    list-style: none;
+}
+.list-menu li span{
+    color: #fff;
+}
+.list-menu li div:first-child{
+    padding-left: 10px;
+    vertical-align: middle;
+}
+.list-menu li div:last-child{
+    font-size: 1.4em;
+    color: #fff;
+    padding: 10px;
+}
+.list-menu li div:last-child:hover{
+    transition: 1s;
+    background-color: #151414;
+    border-radius: 10px;
+
+}
+menu article.playlists h2{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #fff;
+    font-size: 1.3em;
+}
+article.playlists div{
+    margin-left: 5px;
+}
+article.playlists div.img-cria-playls{
+    background-color: #fff;
+    padding: 0px 9px;
+    font-size: 1.9em;
+}
+article.playlists div.img-curtidas{
+    vertical-align: middle;
+}
+article.playlists p{
+    margin-left: 10px;
+}
+menu hr{
+    width: 80%;
+    margin:0  auto;
+}
+/* imagem do header */
+article.conten-img{
+    width: 30%;
+    height: 100%;
+}
+.conten-img figure{
+    height: 100%;
+}
+.conten-img img{
+    width: 100%;
+    height: 100%;
+    min-width: 150px;
+    max-width: 200px;
+}
+.icon-moble{ 
+    float: right;
+    margin-right: 5%;
+    height: 100%;
+}
+.icon-moble span{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 2em;
+}
+/* meu corpo de cite */
+main{
+    background-color:#151414 ;
+    padding-top: 50px;
+}
+section.mas-tocadas > h1{
+    color: #fff;
+    padding-left: 10%;
+    font-size: 1.9em;
+}
+article.caixa-musica{
+    width: 50%;
+    margin: 30px auto;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 3s;
+}
+.caixa-musica div.img-music{
+    height: 150px;
+
+}
+/* essas imagem ficaram na pagina caso o js não fonsione*/
+.caixa-musica div.img-music{
+    background: url("../imagem/top50.png") center no-repeat; 
+    background-size:  100% 100%;
+}
+section.mas-tocadas :nth-of-type(2n+1) div.img-music{
+    background: url("../imagem/top50global.png") center no-repeat;
+    background-size: 100% 100%;
+} 
+/*__________________*/
+.caixa-musica h1{
+    color: #fff;
+    line-height: 2em;
+    font-size: 1.3em;
+}
+.caixa-musica p{
+    color: #fff;
+}
+.caixa-musica div.text-music{
+    padding:30px 5%;
+}
+/* seção minhas musicas */
+section.minhaMusicas > h1{
+    margin: 40px 0px;
+    margin-left: 15%;
+}
+/* essas imagem ficaram na pagina caso o js não fonsione*/
+.minhaMusicas :nth-of-type(1) div.img-music{
+    background-image: url("../imagem/gunsrools.png");
+}
+.minhaMusicas :nth-of-type(2) div.img-music{
+    background-image: url("../imagem/rocky.png");
+}
+/*__________________*/
+/* seção contoles musicas  */
+section.musicaplay{
+    background-color:#1e1e1e ;
+    overflow: hidden;
+    position: fixed;
+    display: none;
+    bottom: 0;
+    width: 100%;
+}
+section div.ordenControles{
+    
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+section .cotroles{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+section .cotroles div{
+    width: 10%;
+    height: 40px;
+    text-align: center;
+}
+section .cotroles span{
+    color: #fff;
+    font-size: 180%;
+
+}
+.cotroles .play-pause{
+    margin: 0 20%;
+}
+article.progresoMusica{
+    text-align: center;
+}
+article.progresoMusica input{
+    width: 60%;
+}
+section .caixaImgMusica{
+    width: 30%;
+
+}
+section .imgMusica{
+    width: 30%;
+    max-width: 150px;
+    height: 100%;
+    float: left;
+    background-color: #000;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: center no-repeat ;
+    background-size: cover;
+}
+main::-webkit-scrollbar{
+    width: 15px;
+}
+main::-webkit-scrollbar-track{
+    height:100px;
+    background-color:#525252;
+}
+main::-webkit-scrollbar-thumb {
+    background-color: #D65A5A;
+    border-radius: 10px;
+}

@@ -1,0 +1,22 @@
+/* arai musica mas tocadas */
+section.mas-tocadas,section.minhaMusicas{
+    text-align: center;
+}
+section.mas-tocadas >h1,section.minhaMusicas >h1{
+    text-align: left;
+}
+article.caixa-musica{
+    width: 40%;
+    max-width: 350px;
+    display: inline-block;
+}
+article.caixa-musica:nth-of-type(2n+1){
+    margin-right: 5%;
+}
+section.minhaMusicas > h1{
+    margin-left:5%;
+}
+/*  arai controle da  musica */
+.cotroles .play-pause{
+    margin: 0 5%;
+}
